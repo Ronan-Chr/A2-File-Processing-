@@ -24,6 +24,9 @@ function calculateSum(numbers) {
 
 // Function to find the highest number
 function findHighest(numbers) {
+    if (numbers.length === 0) {
+        return null;
+    }
     let highest = numbers[0];
     for (const number of numbers) {
         if (number > highest) {
@@ -35,6 +38,9 @@ function findHighest(numbers) {
 
 // Function to find the lowest number
 function findLowest(numbers) {
+    if (numbers.length === 0) {
+        return null;
+    }
     let lowest = numbers[0];
     for (const number of numbers) {
         if (number < lowest) {
